@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --font_1: 'Poppins', sans-serif;
+    --primary-color: #414581;
+
+    --background_color_1: #FFF9F5;
+    --background_color_2: #FFC098;
+
+}
+
+body {
+    font-family: var(--font_1);
+
+    background-color: var(--background_color_1);
+
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 20%;
+
+    background-color: var(--background_color_2);
+
+    border-top-style: solid;
+    border-top-color: var(--primary-color);
+
+    font-size: 0.9rem;
+
+    margin-bottom: 0%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    /* Bloco com Título e Subtítulo, Menu e Botão WhatsApp */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 220px;
+
+    background-color: var(--background_color_1);
+
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary-color);
+}
+
+#title_box {
+    /* Bloco com Título e Subtítulo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-transform: uppercase;
+    font-size: 0.6rem;
+
+    margin: 20px;
+}
+
+#logo {
+    width: 50px;
+}
+
+#logo_line {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#logo_box {
+    width: 242px;
+    height: 34px;
+
+    position: relative;
+}
+
+#title_box h1 {  
+    /* Título da  Página */
+    position: relative;
+    
+    text-align: center;
+    text-transform: none;
+    font-size: 1.375rem;
+
+    top: -4px;
+}
+
+#logo {
+    width: 65px;
+    height: 65px;
+}
+
+#menu_box {
+    width: 500px;
+    font-weight: 100;
+}
+
+.menu { 
+    display: flex;
+    justify-content: space-around;
+
+    height: 40px;
+
+    border-style: hidden;
+    border-color: #fff;
+
+    font-size: 0.8rem;
+    font-style: normal;
+
+    padding: 10px;
+}
+
+.top a:hover {
+    /* Destaque ao passar o mouse no menu */
+    color: #FFC098;
+}
+
+#buttons_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    width: 500px;
+
+    padding-right: 30px;
+
+}
+
+.login_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    font-size: 0.8rem;
+}
+
+.perfil_img {
+    width: 30px;
+}
+
+.cover {
+    /* Capa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+
+    background-image: url(./assets/images/cover_cat.webp);
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.cover p {
+    /* Texto sob a capa */
+    font-size: 4.6rem;
+
+    margin-bottom: 16px;
+}
+
+.cover_img {
+    /* Bloco na primeira section com a capa */
+    width: 85vw;
+    height: 80vh;
+    background-image: url(./assets/images/cover_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 20px;
+}
+
+.flavours_box {
+    /* Bloco de Informações */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 80%;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.flavours {
+    /* Bloco de Artigos detro do Bloco de Informações */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.flavour {
+    /* Artigos dentro do Bloco "benefits" */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 250px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.flavour_title {
+    align-items: center;
+    display: flex;
+
+    height: 100px;
+    
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flavour_img {
+    height: 100px;
+}
+
+.topics_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+
+    background-image: linear-gradient(to top, rgb(255,192,152),rgb(255,249,245));
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 250px;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.topic_title {
+    align-items: center;
+    display: flex;
+
+    height: 100px;
+
+    font-weight: lighter;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topic svg {
+    width: 100px;
+    height: 100px;
+}
+
+.section_title {
+    font-size: 4rem;
+
+    margin: 20px;
+}
+
+.benefit_leg {
+    font-size: 0.8rem;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.footer_info_line {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_info_box {
+    width: 300px;
+
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+.footer h4 {
+    font-size: 2rem;
+}
+
+.social_media {
+    /* Footer - Lado Esquerdo */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 25%;
+}
+
+.button_order {
+    /* Botão "WhatsApp" */
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    background-color: var(--primary-color);
+
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 30px;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font_1);
+    font-weight: 100;
+    color: #fff;
+    
+    margin: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 40px;
+}
+
+.button_order:hover{
+    background-color: #FFF9F5;
+    color: var(--primary-color);
+}
+
+.footer_extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+
+    background-color: #FFF9F5;
+
+    text-align: center;
+}
+
+.development {
+    background-color: #FFC098;
+
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight:bold;
+
+    padding: 5px;
+}
+
+.development a:hover {
+    color: #FFF9F5;
+    text-decoration: none;
+
+}
+
+.development a {
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.inscription {
+    /* Inscription Box */
+    width: 350px;
+}
+
+.inscription p {
+    /* Legenda Inscription Box */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.inscription h4 {
+    /* Título Inscription Box */
+    font-size: 1.3rem;
+}
+
+.inscription input {
+    /* Botão para iscrever-se */
+    width: 100%;
+
+    background: transparent;
+
+    border-color: transparent;
+    border-style: solid;
+    border-bottom-color: var(--primary-color);
+}
+
+.inscription input:focus {
+    /* Aplicação da seleção do input  type email */
+    background-color: #fff;
+
+    border-color: transparent;
+    border-style: none;
+    border-bottom-color: var(--primary-color);
+}
+
+.inscription div + div {
+    /* Div com Botão subscription */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription_button {
+    /* Botão "Subscrible" */
+    width: 100%;
+    background-color: var(--primary-color);
+
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 30px;
+
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--font_1);
+    font-weight: 100;
+    color: #fff;
+    
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-inline: 40px;
+}
